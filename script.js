@@ -9,10 +9,10 @@ function clearDisplay() {
 function calculateResult() {
     let display = document.getElementById("display").value;
     try {
-        
+      
         document.getElementById("display").value = eval(display);
     } catch (error) {
-        
+       
         document.getElementById("display").value = "Error";
     }
 }
