@@ -10,12 +10,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f4f4f4;
+    background: #2a2750;
 }
 
 .calculator {
     width: 300px;
-    background: #222;
+    background: #2f2a74fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -28,7 +28,7 @@ body {
     text-align: right;
     padding: 10px;
     border: none;
-    background: #333;
+    background: #444;
     color: white;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -57,13 +57,13 @@ body {
 }
 
 .equal {
-    background: #ff9800;
+    background: #2a2750;
     color: white;
     grid-column: span 2;
 }
 
 .equal:hover {
-    background: #e68900;
+    background: #302d5c;
 }
 
 .zero {
