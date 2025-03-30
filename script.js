@@ -1,13 +1,21 @@
+function appendValue(value) {
+    document.getElementById("display").value += value;
+}
+
+function clearDisplay() {
+    document.getElementById("display").value = "";
+}
+
+function deleteLast() {
+    let display = document.getElementById("display");
+    display.value = display.value.slice(0, -1);
+}
+
 function calculate() {
-    let display = document.getElementById("display").value;
+    let display = document.getElementById("display");
     try {
-      
-        if (/^[0-9+\-*/.() ]+$/.test(display)) {
-            document.getElementById("display").value = new Function("return " + display)();
-        } else {
-            document.getElementById("display").value = "Error";
-        }
+        display.value = new Function("return " + display.value)();
     } catch {
-        document.getElementById("display").value = "Error";
+        display.value = "Error";
     }
 }
